@@ -35,6 +35,16 @@ console.log(typeof undevfVar);//output:undefined
 let nullVar=null;
 console.log(typeof nullVar);//output:object
 
+//6.symbol==> symbol represent a unique identifier
+let countryOfOrigin=Symbol();
+let productInfo={
+    productName: "OnePlus 9",
+    productPrice: 69999,
+    [countryOfOrigin]:"China"
+};
+console.log(productInfo);
+
+
 /**************************************************/
 /***********NON**PRIMITIVE DATA TYPES*********/
 /**************************************************/
@@ -76,6 +86,61 @@ console.log(fruitsAndPrices[1]);
 
 //print availability of Orange from fruitsAndPricesAndAvailability array
 console.log(fruitsandpriceandAvailability[11]);
+
+//call the function
+launchTheApplication("Chrome","https://www.example.com");
+
+//4.Date ==> Date represents date and time in javascript
+
+let currentDate=new Date();
+
+//get current year
+console.log(currentDate.getFullYear());//output current year
+
+//get current month
+console.log(currentDate.getMonth()+1);//output:current month(0-based index,so adding 1)
+
+//get current date
+console.log(currentDate.getDate());//output current date
+
+//get current hours
+console.log(currentDate.getHours());//current hours
+
+//get current minutes
+console.log(currentDate.getMinutes());//output: current minutes
+
+//get current seconds
+console.log(currentDate.getSeconds());//output current sec
+
+//get millisecond since jan 1,1970
+console.log(currentDate.getMilliseconds());//output:milliseconds since 1 jan,1970
+
+//5.Map==> Map represent a collection of key pairs where keys can be of any data type
+
+let employeeMap=new Map();
+
+employeeMap.set("empId",101)
+employeeMap.set("empName","john doe")
+employeeMap.set("havingVisa",true)
+employeeMap.set("empName","Akash")
+employeeMap.delete("havingVisa")//deleting key HavingVisa
+
+//get employee name
+
+console.log(employeeMap.get("empName"));//output Akash//print only latest data
+console.log(employeeMap);
+console.log(employeeMap.size)//getting size
+
+//6.set ==> set represent a collection of unique values of any data type
+
+let uniqueNumbers=new Set();
+uniqueNumbers.add(10);
+uniqueNumbers.add(20);
+uniqueNumbers.add(30);
+uniqueNumbers.add(20);//duplicate value,will hot be added
+uniqueNumbers.delete(10);//deleting value 10
+console.log(uniqueNumbers.size)//getting size of the set
+console.log(uniqueNumbers);
 
 
 
