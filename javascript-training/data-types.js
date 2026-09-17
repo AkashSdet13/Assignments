@@ -142,6 +142,11 @@ uniqueNumbers.delete(10);//deleting value 10
 console.log(uniqueNumbers.size)//getting size of the set
 console.log(uniqueNumbers);
 
+//7. any represent a variable that can hold any type of data.(not recommended to use)
+//it will remove all the type-checking benefits provided by Typescript
+
+
+
 
 
 
