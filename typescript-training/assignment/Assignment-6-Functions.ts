@@ -25,7 +25,7 @@ function checkPrimeNamed(n: number): boolean {
 
 // ======================================
 // 2. Anonymous Function
-// ======================================
+// =================
 
 const checkPrimeAnonymous = function(n: number): boolean {
 

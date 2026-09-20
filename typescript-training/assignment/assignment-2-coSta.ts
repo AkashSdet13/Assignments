@@ -65,3 +65,6 @@ checkLoanEligibility(
     isEmployed,
     debtToIncomeRatio
 );
+
+export {};//export statement to make this file a module and avoid global scope issues.
+//export statement to make this file a module and avoid global scope issues.
